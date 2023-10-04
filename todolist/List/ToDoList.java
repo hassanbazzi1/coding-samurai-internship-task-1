@@ -30,7 +30,7 @@ public class ToDoList {
             for (int i = 0; i < tasks.size(); i++) {
                 Task task = tasks.get(i);
                 String status = task.isCompleted() ? "Completed" : "Not Completed";
-                System.out.println(i + ". " + task.getTitle() + " - " + status);
+                System.out.println(i + "  " + task.getTitle() + "  " + status);
             }
         }
     }
