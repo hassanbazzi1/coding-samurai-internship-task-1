@@ -4,7 +4,6 @@ public class ToDoListTest {
     public static void main(String[] args) {
         ToDoList todoList = new ToDoList();
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
             System.out.println("To-Do List Application");
             System.out.println("1. Add Task");
@@ -13,13 +12,12 @@ public class ToDoListTest {
             System.out.println("4. Remove Task");
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
-
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
-                    // Implement code to add a task using todoList
+                    // case that adds a task using todoList
                     System.out.println("Enter task title: ");
                     String title = scanner.nextLine();
                     System.out.println("Enter task description: ");
@@ -33,7 +31,7 @@ public class ToDoListTest {
                     break;
 
                 case 2:
-                    // Implement code to mark a task as complete using todoList
+                    // case to mark a task as complete using todoList
                     todoList.viewTasks();
                     System.out.println("Enter the index of the task to mark as complete: ");
                     int completeIndex = scanner.nextInt();
@@ -44,12 +42,12 @@ public class ToDoListTest {
                     break;
 
                 case 3:
-                    // Implement code to view tasks using todoList
+                    // case to view tasks using todoList
                     todoList.viewTasks();
                     break;
 
                 case 4:
-                    // Implement code to remove a task using todoList
+                    // case to remove a task using todoList
                     todoList.viewTasks();
                     System.out.println("Enter the index of the task to remove: ");
                     int removeIndex = scanner.nextInt();
